@@ -118,42 +118,19 @@ $= O(logn)$
 $O(logn)$
 
 \part{c}\\
-$O(n^3 \cdot logn)$
+$n^3 \cdot logn$
 
 \question{5}{problem 5}
 \part{a}\\
 Search the index of the val which is inserted into the function. The variable at first are "val", "m", "alist", "left", "right" and "length". Where "left" and "right" is for the index, the "length" is to make sure that the range is not greater than length-1. The "val", "m", and "alist" is the inserted value. The first while loop (from line 4 - 8) is use to find the range of index that containing "val". For line 4, the loop will run until "left" is out of the array range or when the value is greater than the "val" we are searching for. Both condition means that the function will surely terminate and return -1 as the "val" is not in an array. This condition work because we assume that the array is sorted in an increasing order. For line 5 we wanted to find the value for the variable "right". For line number 6 we check if the value on "alist[left]" is less than or equal to the "val" and "alist[right]" is greater than or equal to the "val". This is because the elem in the array is sorted from small to large, which means in most of the cases the the "left" index need to be smaller than the "right". The only cases where it is possible for "left" to be equal to "right" is when the first elem has the same value as "val" or that it is greater than "val". For line number 7, if we got the range the program will break and skip to line number 9. Else, the program will increase the value of "left" which in turn increase the value of right. This means it shifted the range to find the correct one as the value "alist[right]" in the previous range is smaller the the "val". Then the loop continues. After the loop is finish, the program goes to line number 9. This check if "left" is greater or equal to length or "alist[left]" greater than "val" it will return -1. This is because if "left" is greater or equal to the length, the value is smaller and does not exist in an array. As the index goes from 0 to length-1. For the other condition it means if the "alist[left]" is greater than the "val" the "val does not exist in the array". This is because the "alist[left]" is the smallest possible value. Some time the "right" value can be greater than lenght-1. The line number 11 is to make sure that the largest possible value for "right" is length-1. Then we start searching for the value. So we start the searching at index "i" which is equal to "left". The if condition is there to return the correct index instantly if "i" is equal to "val". However if the "val" is within the range but there is no "val" in the array it will return -1 when the loop is finish.
 
 \part{b}\\
-There are 2 possible cases.\\
-First case:\\
-This case will happen when "alist" conatain "val". We need to prove 2 loop invariant for this case, one for the first loop and another for the second loop.
-First loop invariant:\\
-During the first iteration, alist[1...alist.length] is sorted in an increasing order containing the "val".\\
-Initialization: When we start, alist[left] will be smaller than or equal to the "val" and alist[right] will be greater than or equal to "val". As we promise that the "alist" will contain only ascending order numbers, we just need to make sure that the index is not out of range. There will be a case where left and right has equal value and it is both lesser than the "val" it will get into the condition where left will be increase by the value of m. This will result in the increase in the right value.\\
-Maintenance:\\
-If $left < alist.length$ and $alist[left] is \leq val$, the iteration will continue checking until its get the range for the val containing j numbers, where $j \leq m$.\\
-Termination:\\
-When we got the range, where $alist[left] \leq val$ and $alist[right] \geq val$. We know that we might be able to find the index i which has the same value as "val".\\
-So the invariant is true. Hence, after the loop terminate, this loop will left us with the range of numbers containing j integers. Which might contain the "val".\\
-At the start iteration for the second loop, we know that the starting index i is equal to the value left from the previous invariant and that $a[1...alist.length]$ is sorted in ascending order. This means we will search from $alist[i]$ to alist[right].\\
-Then we show:\\
-Initialization:\\
-This is true, when we start the iteration, the loop start from $alist[i]$ and it will check whether $alist[i] == val$ or not. If $alist[i] == val$ the program will immediately return the value i. Else the loop will increase the value of $i$ by $1$.\\
-Maintenance:\\
-If $i \leq right$ and $alist[i] \leq val$ the loop will continue searching for the element in the range $j$ containing val.\\
-Termination:\\
-When the val is found which led to the termination of a program, we will have the index $i$.\\
-So the invariant is true. Hence after the algorithms terminates, this will leave us with the index of the element of alist where "val" is located.\\
-Second case:\\
-This case will happen when the alist is not containing "val".\\
-The loop invariant for the first loop will make sure that if we cannot find val 2 possible case can happen. The first case is when we cannot find the range j, as all of the numbers are less than or greater than the val. This means line 8 will take care for the case where all of the element has less value than the right one. As the if indicates that $left < alist.length$. Another main cases will will led to the second loop is that the first loop contain the possible range j, but when we loop it does not contain "val". this indicate that $left < right$ and $alist[left] \leq val$. The program will terminates with $-1$ due to the second loop, where it runs from $i$ to $alist.length$. This prove that the program works correctly.
+At the start of each iteration, the array is sorted
 
 \part{c}\\
-$O(\frac{n}{m} + m)$
 
 \part{d}\\
-$\sqrt{n}$
+
 
 \question{6}{Problem 6}
 \part{a}\\
