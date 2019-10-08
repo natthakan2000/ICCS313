@@ -1,0 +1,103 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Natthakan Euaumpon}
+\newcommand{\myemail}{natthakaneuaumpon@gmail.com}
+\newcommand{\myhwnum}{2}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{HW\myhwnum}}}      % Note the different brackets!
+\rhead{\fancyplain{}{\myname\\ \myemail}}
+\chead{\fancyplain{}{ICCS313 }}
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large ICCS313: Assignment \myhwnum} \\
+\myname \\
+\myemail \\
+October 2019 \\
+\end{center}
+
+\question{1}{Part1}
+\part{a}\\
+$2T(\frac{n}{3})+1$\\
+$a=2, b=3, d=0$\\
+$log_{b}a = log_{3}9$\\
+$log_{3}9 > 0$\\
+$=O(n^{log_{3}2})$
+
+\part{b}\\
+$5T(\frac{n}{4})+n$\\
+$a=5, b=4, d=1$\\
+$log{b}a = log{4}5$\\
+$log{4}5 > 1$\\
+$=O(n^{log_{4}5})$
+
+\part{c}\\
+$7T(\frac{n}{7})+n$\\
+$a=7, b=7, d=1$\\
+$log_{b}a = log_{7}7$\\
+$1 = 1$\\
+$=O(nlogn)$
+
+\part{d}\\
+$9T(\frac{n}{3})+n^{2}$\\
+$a=9, b=3, d=2$\\
+$log_{b}a = log_{3}9$\\
+$2 = 2$\\
+$= O(n^{2}logn)$
+
+\part{e}\\
+$8T(\frac{n}{2})+n^{3}$\\
+$a=8, b=2, d=3$\\
+$log_{b}a = log_{2}8$\\
+$3 = 3$\\
+$= O(n^{3}logn)$
+
+\part{f}\\
+$T(n-1)+2$\\
+$(T(n-2)+2)+2$\\
+$(T(n-3)+2)+2+2$\\
+$(T(n-4)+2)+2+2+2$\\
+.\\
+.\\
+.\\
+$(T(0)+2)+2(n-1)$\\
+T(n-1) run $n$ times so it is $2n$\\
+$= O(n)$
+
+\part{g}\\
+$T(n-1)+2^{c}$\\
+$(T(n-2)+2^{c})+2^{c}$\\
+$(T(n-3)+2^{c})+2^{c}+2^{c}$\\
+$(T(n-4)+2^{c})+2^{c}+2^{c}+2^{c}$\\
+.\\
+.\\
+.\\
+$(T(0)+2^{c})+2^{c}\cdot(n-1)$\\
+$= O(n \cdot 2^{c})$\\
+$=O(n)$
+\question{2}{Part2}
+
+\end{document}
+
