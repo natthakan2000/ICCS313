@@ -193,5 +193,33 @@ By using master theorem:\\
 $\log_{b} a = \log_2 3$\\
 $\log_2 3 > 1$\\
 $=O(n^{\log_{2} 3})$
+
+\question{4}{Problem4}
+\part{a}{Brute Force Algorithm}\\
+Do nested for loop and keep the maximum occurrence.\\ 
+1)Instantiate counter, max and current which is the type of that element in the array to keep track. Where at first we set the counter and max to be 0.\\ 
+2)Loop through every element by using and out side iteration. For each element we loop through and entire list and count all the occurrence.\\
+3)After we done one inside iteration we compare the counter with the max value. If it is greater then we make greater equal to counter and set current to that element. Then we reset counter and continue the loop until the outer loop finish.\\
+4)After that we compare our max value to the length of the array divided by 2. If it is greater then we return that current.\\
+The time complexity of this algorithm is $O(n^{2})$ as instantiate element take O(n). As an inside iteration take $O(n)$and the out side run $O(n)$ times. The if statement and other implementation inside the loop take constant time. So the time complexity is $O(n \cdot n) = O(n^{2})$
+
+\part{b}{$n\log n$ time complexity}\\
+Using divide and conquer method.\\
+1)Divide the array into half.\\
+2)Continue dividing the array until we can compare the element.\\
+3)Recursively keep track of the element.\\
+4)If there is no majority element then we return null.\\
+5)Combining 2 array together. This have 3 main cases. The first case is when there are no majority element, the it re turn null. Second case is that if there is a majority element.  This means its majority element is the same. Then we don't have to do any comparison, we can just return the majority element. The third case is when only one sub array contain the majority element, then we compare which sub array contain the majority element and return the majority element.\\
+
+\part{c}{linear time algorithm}\\
+1)Divide array A into $\frac{n}{2}$ sub arrays of A.\\
+2)We only keep the array that the 2 element matches.\\
+3)Choose the elements with the highest occurrence and look for the same element in the su array in which we remove in the second step. Then we count if it is greater than$\frac{A.length}{2}$ then we return the majority element.\\
+We will have $\frac{n}{2}$ elements left because n this algorithm if it is a match there will always be 1 element which has been remove.
+\question{5}{Problem 5}
+My account: Natthakan EUAUMPON\\
+Email address: natthakan.eua@student.mahidol.edu\\
+My team name is Natthakan Euaumpon\\
+I submit the Brute force algorithm first to check my main. Then I submit the divide and conquer method.
 \end{document}
 
