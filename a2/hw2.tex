@@ -44,35 +44,35 @@ $2T(\frac{n}{3})+1$\\
 $a=2, b=3, d=0$\\
 $log_{b}a = log_{3}9$\\
 $log_{3}9 > 0$\\
-$=O(n^{log_{3}2})$
+$T(n)=O(n^{log_{3}2})$
 
 \part{b}\\
 $5T(\frac{n}{4})+n$\\
 $a=5, b=4, d=1$\\
 $log{b}a = log{4}5$\\
 $log{4}5 > 1$\\
-$=O(n^{log_{4}5})$
+$T(n)=O(n^{log_{4}5})$
 
 \part{c}\\
 $7T(\frac{n}{7})+n$\\
 $a=7, b=7, d=1$\\
 $log_{b}a = log_{7}7$\\
 $1 = 1$\\
-$=O(nlogn)$
+$T(n)=O(nlogn)$
 
 \part{d}\\
 $9T(\frac{n}{3})+n^{2}$\\
 $a=9, b=3, d=2$\\
 $log_{b}a = log_{3}9$\\
 $2 = 2$\\
-$= O(n^{2}logn)$
+$T(n)=O(n^{2}logn)$
 
 \part{e}\\
 $8T(\frac{n}{2})+n^{3}$\\
 $a=8, b=2, d=3$\\
 $log_{b}a = log_{2}8$\\
 $3 = 3$\\
-$= O(n^{3}logn)$
+$T(n)=O(n^{3}logn)$
 
 \part{f}\\
 $T(n-1)+2$\\
@@ -84,13 +84,76 @@ $(T(n-4)+2)+2+2+2$\\
 .\\
 $(T(0)+2)+2(n-1)$\\
 T(n-1) run $n$ times so it is $2n$\\
-$= O(n)$
+$T(n)=O(n)$
 
 \part{g}\\
-
+$T(n-1)+n^{c}$\\
+$=(T(n-2)+(n-1)^{c})+n^{c}$\\
+$=(T(n-3)+(n-2)^{c})+(n-1)^{c}+n^{c}$\\
+.\\
+.\\
+.\\
+$=(T(0)+(n-(n+1))^{c})+2^{c}+...+n^{c}$\\
+$=T(0)+1^{c}+2^{c}+...+n^{c}$\\
+$T(n)=1^{c}+2^{c}+...+n^{c}, \forall n \geq 1$\\
+$T(n)=n^{c+1}, \forall n \geq 1$\\
+$T(n) \leq n^{c+1} when c = 1 and \forall n \geq n_{0} = 1$\\
+$T(n)=O(n^{c+1})$
 
 \part{h}\\
+$T(n-1)+c^{n}$\\
+$=(T(n-2)+c^{n-1})+c^{n}$\\
+$=(T(n-3)+c^{n-2})+c^{n-1}+c^{n}$\\
+.\\
+.\\
+.\\
+$=(T(0)+c^{n(n-1)})+c^{2}+...+c^{n}$\\
+$=T(0)+c^{1}+c^{2}+...+c^{n}$\\
+$T(n)=c^{1}+c^{2}+...+c^{n}$\\
+$cT(n)=c^{2}+c^{3}+...+c^{n+1}$\\
+$cT(n)-T(n)=(c^{2}+c^{3}+...+c^{n+1})-(c^{1}+c^{2}+...+c^{n})$\\
+$T(n)\cdot (c-1)=c^{n+1}-c$\\
+$T(n)=\frac{c \cdot (c^{n}-1)}{c-1}$\\
+$\lim_{n\to\infty} \frac{\frac{c \cdot (c^{n}-1)}{c-1}}{c^{n}}$\\
+$\lim_{n\to\infty} \frac{c\cdot (c^{n}-1)}{c^{n}\cdot (c-1)}$\\
+$\lim_{n\to\infty} \frac{c^{n+1}-c}{c^{n+1}=c^{n}}$\\
+$=1$\\
+$T(n)\in\Theta(c^{n})$, therefore $T(n)\in O(c^{n})$
 
+\part{i}\\
+$2T(n-1)+1$\\
+$=2(2T(n-2)+1)+1$\\
+$=2(2(T(n-3)+1))+2+1$\\
+.\\
+.\\
+.\\
+$=T(0)+1+2+4+...+2^{n-1}$\\
+$T(n)=1+2+4+...+2^{n-1}$\\
+$2T(n)=2+4+...+2^{n}$\\
+$2T(n)-T(n)=(2+4+...+2^{n})-(1+2+4+...+2^{n-1})$\\
+$T(n)=2^{n}-1$\\
+$\lim_{n\to\infty} \frac{2^{n}}{2^{n}}$\\
+$=1$\\
+$T(n)\in\Theta(2^{n})$, therefore $T(n)\in O(2^{n})$\\
+
+\part{j}\\
+$T(n^{\frac{1}{2}})+1$\\
+$=(T(n^{\frac{1}{4}})+1)+1$\\
+$=(T(n^{\frac{1}{8}})+1)+1+1$\\
+.\\
+.\\
+.\\
+$=T(n^{\frac{1}{2^{k}}})+k$\\
+$n$ need to be greater than or equal to $2$ to get $T(0)$.\\
+So, $2 = n^{\frac{1}{2^{k}}}$\\
+$\log_{n} 2 \frac{1}{2^{k}}$\\
+$2^{k} = \frac{1}{\log_{n} 2}$\\
+$k = \log_2 \frac{1}{log_{n} 2}$\\
+$k = \log_2\log_2 n$\\
+$T(n)=\log_2\log_2 n$\\
+$\lim_{n\to\infty} \frac{\log_2\log_2 n}{\log_2\log_2 n}$\\
+$=1$\\
+$T(n)\in\Theta(\log_2^{2} n)$, therefore $T(n)\in O(\log_2^{2} n)$
 \question{2}{Part2}
 
 \end{document}
