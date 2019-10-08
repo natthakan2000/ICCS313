@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="399da856-4233-4d47-a1df-4797f7bb75bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hw2.log" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw2.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw2.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2.tex" afterDir="false" />
-    </list>
+    <list default="true" id="399da856-4233-4d47-a1df-4797f7bb75bb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +18,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ClosestPair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="23">
+              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1120#1121#0" expanded="true" />
                 <element signature="e#1177#1178#0" expanded="true" />
               </folding>
@@ -131,12 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570084059040</updated>
-      <workItem from="1570084063188" duration="17648000" />
+      <workItem from="1570084063188" duration="17688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17648000" />
+    <option name="totallyTimeSpent" value="17688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
@@ -179,10 +173,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ClosestPair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="23">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1120#1121#0" expanded="true" />
             <element signature="e#1177#1178#0" expanded="true" />
           </folding>

@@ -183,6 +183,15 @@ $\log_{b} a = \log_{4} 5$\\
 $\log_{4} 5 > 1$\\
 $=O(n^{\log_{4} 5})$\\
 We should use algorithm d as it has lowest upper bound of time complexity.
-
+\question{3}{Problem3}
+The function f(n) use n as an input and the loop will stop running when $n=1$\\
+This program calls itself 3 times each take $\frac{n}{2}$\\
+The time complexity for printing is $O(1)$\\
+This means:\\
+$T(n)=3T(\frac{n}{2})+O(1)$\\
+By using master theorem:\\
+$\log_{b} a = \log_2 3$\\
+$\log_2 3 > 1$\\
+$=O(n^{\log_{2} 3})$
 \end{document}
 
