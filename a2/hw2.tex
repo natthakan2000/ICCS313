@@ -155,6 +155,34 @@ $\lim_{n\to\infty} \frac{\log_2\log_2 n}{\log_2\log_2 n}$\\
 $=1$\\
 $T(n)\in\Theta(\log_2^{2} n)$, therefore $T(n)\in O(\log_2^{2} n)$
 \question{2}{Part2}
+Algorithm A:\\
+$T(n)=3T(\frac{b}{3})+O(n)$\\
+By using master theorem:\\
+$a=3, b=3, d=1$\\
+$\log_{b} a = log_3 3 = 1$\\
+$1=1$\\
+$=O(n\log n)$
+Algorithm B:\\
+$T(n) = T(n-1)+O(n)$\\
+$T(n-1)+O(n)$\\
+$=(T(n-2)+O(n))+O(n)$\\
+.\\
+.\\
+.\\
+$T(n)=O(n^{2})$\\
+Algorithm C:\\
+$T(n)=2T(\frac{n}{3})+O(n^{2})$\\
+By using master theorem:\\
+$\log_{b} a = \log_{3} 2$\\
+$\log_{3} 2 < 2$\\
+$=O(n^{2})$\\
+Algorithm D:\\
+$T(n)=5T(\frac{n}{4})+O(n)$\\
+By using master theorem:\\
+$\log_{b} a = \log_{4} 5$\\
+$\log_{4} 5 > 1$\\
+$=O(n^{\log_{4} 5})$\\
+We should use algorithm d as it has lowest upper bound of time complexity.
 
 \end{document}
 
