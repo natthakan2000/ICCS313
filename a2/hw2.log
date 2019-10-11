@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.7)  11 OCT 2019 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.7)  11 OCT 2019 23:04
 entering extended mode
 **./hw2.tex
 (hw2.tex
@@ -239,7 +239,7 @@ Here is how much of TeX's memory you used:
  5703 multiletter control sequences out of 15000+200000
  8894 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,10n,43p,418b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,43p,432b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Natthakan/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Natthaka
@@ -254,7 +254,7 @@ n/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
 cm/cmsy10.pfb><C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy6.pfb><C:/Users/Natthakan/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on hw2.pdf (5 pages, 129243 bytes).
+Output written on hw2.pdf (5 pages, 129245 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

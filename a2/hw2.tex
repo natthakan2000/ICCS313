@@ -208,7 +208,7 @@ Using divide and conquer method.\\
 1)Divide the array into half, left and right.\\
 2)Continue dividing the array until we can compare the element.\\
 3)Recursively keep track of the element, checking the majority elements of each sub array and combine them.\\
-4)There are two possible cases. The first case is when two sub-arrays, this means we can just return as they are the same. This is because the definition given is it need to be greater than half the length of the array. The second cases is when the sub-arrays has different majority element. This means we need to count and compare the majority element from both sub-aray to know what we need to return.\\
+4)There are two possible cases. The first case is when two sub-arrays are the same, this means we can just return as they are the same. This is because the definition given is it need to be greater than half the length of the array. The second cases is when the sub-arrays has different majority element. This means we need to count and compare the majority element from both sub-array to know what we need to return.\\
 Time complexity:\\
 $T(n) = 2T(\frac{n}{2})+O(n)$\\
 By using master theorem:\\
