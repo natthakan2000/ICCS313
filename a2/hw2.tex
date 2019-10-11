@@ -198,7 +198,7 @@ $=O(n^{\log_{2} 3})$
 \part{a}{Brute Force Algorithm}\\
 Do nested for loop and keep the maximum occurrence.\\ 
 1)Instantiate counter, max and current which is the type of that element in the array to keep track. Where at first we set the counter and max to be 0.\\ 
-2)Loop through every element by using and out side iteration. For each element we loop through and entire list and count all the occurrence.\\
+2)Loop through every element by using an out side iteration. For each element we loop through and entire list and count all the occurrence.\\
 3)After we done one inside iteration we compare the counter with the max value. If it is greater then we make greater equal to counter and set current to that element. Then we reset counter and continue the loop until the outer loop finish.\\
 4)After that we compare our max value to the length of the array divided by 2. If it is greater then we return that current.\\
 The time complexity of this algorithm is $O(n^{2})$ as instantiate element take O(n). As an inside iteration take $O(n)$and the out side run $O(n)$ times. The if statement and other implementation inside the loop take constant time. So the time complexity is $O(n \cdot n) = O(n^{2})$
