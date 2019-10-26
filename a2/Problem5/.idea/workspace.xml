@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="399da856-4233-4d47-a1df-4797f7bb75bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../a3/Problem6/src/Bicoloring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../a3/Problem6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../a3/Problem6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../a3/Problem6/src/ShortestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../a3/Problem6/src/ShortestPath.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-27" />
     <option name="y" value="81" />
     <option name="width" value="1137" />
@@ -157,7 +156,7 @@
     <option name="totallyTimeSpent" value="23954000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
+    <frame x="-7" y="-7" width="1519" height="977" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123372175" />
