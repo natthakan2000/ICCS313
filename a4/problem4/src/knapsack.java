@@ -1,21 +1,21 @@
 public class knapsack {
     static int knapsack(int k, int[] arr) {
-        int ele = arr.length;
-        int[][] dp = new int[ele+1][k+1];
-        for(int i = 0; i<=ele; i++){
-            dp[i][0] = 1;
+        int element = arr.length;
+        int[][] ans = new int[element+1][k+1];
+        for(int i = 0; i<=element; i++){
+            ans[i][0] = 1;
         }
-        int max=0;
-        for(int row = 1; row<=ele; row++){
-            for(int col = 1; col<=k; col++){
-                if(arr[row-1]<=col){
-                    dp[row][col] = dp[row-1][col] + dp[row][col-arr[row-1]];
+        int max = 0;
+        for(int i = 1; i <= element; i++){
+            for(int j = 1; j<=k; j++){
+                if(arr[i-1]<=j){
+                    ans[i][j] = ans[i-1][j] + ans[i][j-arr[i-1]];
                 }
                 else{
-                    dp[row][col] = dp[row-1][col];
+                    ans[i][j] = ans[i-1][j];
                 }
-                if(dp[ele][col]>0){
-                    max = Math.max(max, col);
+                if(ans[element][j]>0){
+                    max = Math.max(max, j);
                 }
             }
         }
