@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.7)  1 DEC 2019 10:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.7)  1 DEC 2019 11:30
 entering extended mode
 **./hw5.tex
 (hw5.tex
@@ -313,7 +313,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <q2.jpg, id=2, 181.80421pt x 149.43329pt>
 File: q2.jpg Graphic file (type jpg)
 <use q2.jpg>
-Package pdftex.def Info: q2.jpg  used on input line 57.
+Package pdftex.def Info: q2.jpg  used on input line 58.
 (pdftex.def)             Requested size: 452.9679pt x 372.36009pt.
 
 
@@ -326,34 +326,42 @@ This may cause the page layout to be inconsistent, however.
 
 {C:/Users/Natthakan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./q1.jp
 g>]
+<q3.jpg, id=14, 245.79327pt x 212.66953pt>
+File: q3.jpg Graphic file (type jpg)
+<use q3.jpg>
+Package pdftex.def Info: q3.jpg  used on input line 73.
+(pdftex.def)             Requested size: 452.9679pt x 391.9397pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (13.59999pt): 
 Make it at least 25.2842pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2 <./q2.jpg>] (hw5.aux) ) 
+[2 <./q2.jpg>] [3 <./q3.jpg>] [4] (hw5.aux) ) 
 Here is how much of TeX's memory you used:
- 2956 strings out of 492946
- 41207 string characters out of 3124491
+ 2961 strings out of 492946
+ 41256 string characters out of 3124491
  114633 words of memory out of 3000000
- 6813 multiletter control sequences out of 15000+200000
+ 6817 multiletter control sequences out of 15000+200000
  8894 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,747b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Natthakan/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Natthakan
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
-/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Natthakan/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Natthaka
-n/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on hw5.pdf (2 pages, 200001 bytes).
+ 41i,11n,43p,747b,212s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Natthakan/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Natthak
+an/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb><C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Natthakan/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Natthakan/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Natt
+hakan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Users/Natthakan/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb>
+Output written on hw5.pdf (4 pages, 267206 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

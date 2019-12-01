@@ -1,0 +1,16 @@
+//m = no. of applicant
+def verifier(setK, map):
+    if (sizeof(setK) <= m):
+        return Null
+    found = false
+    for i in map.keyset: //O(n)
+        subset = map.get(i)
+        for j in subset: //O(seti)
+            for k in setK: //O(k)
+                if (k==j):
+                    found = true
+                    break
+            if (found):
+                continue
+            return false
+    return true
