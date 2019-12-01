@@ -1,0 +1,11 @@
+def delete(table, elem):
+    if (sizeof(table) == 0):
+        return table
+    else if (num(table)/sizeof(table) < (1/4)) //Check if the ratio between number of elem and tble size < 1/4
+        Create new table called newTable with (1/2) * sizeof(table) slot
+        insert all item to the newTable
+        free(table) //free all items from table
+        table = newTable
+        sizeof(table) = (1/4) * sizeof(table)
+    remove elem from table
+    num(table) = num(table) - 1 //remove elem, total elem in the table decrease by 1
