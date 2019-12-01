@@ -1,0 +1,11 @@
+def verifier(S,A):
+    sumS = 0
+    sumA = 0
+    for i in S:
+        sumS += i
+    for i in A:
+        sumA += i
+    if (sumS == 2*sumA):
+        return true
+    else:
+        return false
